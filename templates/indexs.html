@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Classifier</title>
+  </head>
+  <body>
+    <h1>Image Classifier</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept=".jpg, .jpeg, .png" />
+      <input type="submit" value="Predict" />
+    </form>
+    <h1>Result</h1>
+    <p>Class: {{ class_name }}</p>
+    <p>Confidence: {{ confidence }}</p>
+    <a href="/">Back to Home</a>
+  </body>
+</html>
