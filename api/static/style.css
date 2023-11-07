@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+}
+body {
+  background-image: url(/api/static/mais.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* ----------------nav------------ */
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  z-index: 33;
+}
+li {
+  display: flex;
+  align-items: center;
+}
+.navs {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+}
+.navs:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10%;
+  text-decoration-line: underline;
+  transition: all 0.2s ease;
+}
+
+.logo {
+  width: 50px;
+  display: block;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+}
+/* ----------main------ */
+.main_contanier {
+  display: flex;
+  justify-content: center;
+}
+/* ----- */
+.sub_con {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 820px;
+  height: 430px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container_image {
+  height: 200px;
+  width: 400px;
+  color: white;
+}
+.bot_img {
+  font-family: monospace;
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  width: 120px;
+  height: 25px;
+  transition: 0.3s;
+  font-size: 10px;
+}
+
+.bot_img:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+.inserted_imge {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+.classi {
+  margin: 5px;
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 3px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.maintats {
+  font-weight: normal;
+}
+.line {
+  height: 390px;
+  width: 2px;
+  display: flex;
+  background-color: white;
+}
+.container_chat {
+  display: flex;
+  color: white;
+  display: inline-block;
+  height: 200px;
+  width: 400px;
+  text-align: end;
+  padding-left: 5px;
+}
+.chat_res {
+  font-size: 15pt;
+  background-color: white;
+  color: rgb(255, 0, 0);
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+}
+#chatbot-response {
+  color: rgb(0, 0, 0);
+  font-size: 12pt;
+}
+.bot {
+  font-family: monospace;
+  background-color: #f3f7fe;
+  color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 31px;
+  transition: 0.3s;
+  padding: 2px;
+}
+
+.bot:hover {
+  background-color: #3b82f6;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+.input-style {
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+
+.input-style:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+@media (max-width: 815px) {
+  .sub_con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    width: 500px;
+    height: 650px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .line {
+    display: none;
+  }
+  .container_chat {
+    margin-top: 20px;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .line {
+    width: 800px;
+    height: 7px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+  }
+  .main_contanier {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body {
+    background-image: url(/api/static/mais.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+  }
+}
